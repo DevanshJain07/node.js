@@ -8,7 +8,7 @@ var urlencodedParser=bodyParser.urlencoded({ extended: false });
 
 app.post('/contact',urlencodedParser,function(req,res){
     console.log(req.body);
-    res.render('contact-success',{data: req.body});
+    res.render('contact-success',{data: req.body });
 });
 
 app.get('/',function(req,res){
